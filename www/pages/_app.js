@@ -1,5 +1,6 @@
 import React from 'react'
-import App, { Container } from 'next/app'
+
+import App from 'next/app'
 import styled, { createGlobalStyle } from 'styled-components'
 import Head from 'next/head'
 //
@@ -74,19 +75,19 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props
 
     return (
-      <Container>
+      <AppStyles>
         <Head>
           <title>React Charts Examples</title>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <GlobalStyles />
-        <AppStyles>
+        <div>
           <Sidebar>
             <Component {...pageProps} />
           </Sidebar>
-        </AppStyles>
-      </Container>
+        </div>
+      </AppStyles>
     )
   }
 }

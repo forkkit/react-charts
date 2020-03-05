@@ -4,9 +4,9 @@
 
 Simple, immersive and interactive charts for React
 
-<!-- <a href="https://travis-ci.org/react-charts/react-charts" target="\_parent">
-  <img alt="" src="https://travis-ci.org/react-charts/react-charts.svg?branch=master" />
-</a> -->
+<a href="https://twitter.com/intent/tweet?button_hashtag=TanStack" target="\_parent">
+  <img alt="#TanStack" src="https://img.shields.io/twitter/url?color=%2308a0e9&label=%23TanStack&style=social&url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fbutton_hashtag%3DTanStack">
+</a>
 <a href="https://npmjs.com/package/react-charts" target="\_parent">
   <img alt="" src="https://img.shields.io/npm/dm/react-charts.svg" />
 </a>
@@ -27,6 +27,8 @@ Simple, immersive and interactive charts for React
 <a href="https://patreon.com/tannerlinsley">
   <img width="180" alt="" src="https://raw.githubusercontent.com/tannerlinsley/files/master/images/patreon/become-a-patron.png" />
 </a>
+
+Enjoy this library? Try them all! [React Table](https://github.com/tannerlinsley/react-table), [React Query](https://github.com/tannerlinsley/react-query), [React Form](https://github.com/tannerlinsley/react-form)
 
 ## Features
 
@@ -95,7 +97,7 @@ function MyChart() {
   )
 
   const lineChart = (
-    // A react-chart hyper-responsively and continuusly fills the available
+    // A react-chart hyper-responsively and continuously fills the available
     // space of its parent element automatically
     <div
       style={{
@@ -111,7 +113,7 @@ function MyChart() {
 
 ## Documentation
 
-Complete documentation is **coming soon**. The most detailed usage examples are visible by [browsing the website's examples](https://github.com/react-tools/react-charts/tree/master/www/src/containers).
+Complete documentation is **coming soon**. The most detailed usage examples are visible by [browsing the website's examples](https://github.com/tannerlinsley/react-charts/tree/master/www/pages/examples).
 
 Any sparse documentation available in this Readme is being progressively improved as the API evolves.
 
@@ -465,8 +467,8 @@ function MyChart() {
     - `hardMax` **number** - The hard/forced maximum for this axis
     - `base` **number** - The base value for this axis. Defaults to `0`
     - `ticks` **function** - The function used to generate ticks for the axis
+    - `format` **func** - The function used to format values on this axis for display
     - `tickValues` **any** - The optional override for the tick values of the axis
-    - `tickFormat` **func** - The function used to format tick values for display
     - `tickSizeInner` **number** - The size of inner tick lines for the axis
     - `tickSizeOuter` **number** - The size of the outer tick lines for the axis
     - `tickPadding` **number** - The padding amount between tick labels

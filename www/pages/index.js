@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Link from 'next/link'
 //
 
 import logoImg from '../src/logo.png'
@@ -79,39 +78,6 @@ const Styles = styled('div')`
   .github {
     margin-top: 2rem;
     width: 150px;
-  }
-`
-
-const Cards = styled('div')`
-  display: flex;
-  flex-align: stretch;
-  justify-content: stretch;
-  flex-wrap: wrap;
-  width: 1000px;
-  max-width: 95%;
-`
-
-const Card = styled(Link)`
-  flex: 1 1 150px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  background: ${props => props.background};
-  color: white;
-  border-radius: 5px;
-  padding: 2vh 2vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 1rem;
-  font-weight: bold;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: 0.1s ease-out;
-  white-space: nowrap;
-
-  :hover {
-    transform: translate(3px, -5px);
-    box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.2);
   }
 `
 
